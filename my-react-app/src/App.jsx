@@ -14,6 +14,7 @@ import Button from './Button/Button.jsx'
 import Student from "./Student.jsx"
 import UserGreeting from "./UserGreeting.jsx"
 import List from "./List.jsx"
+import ProfilePic from "./ProfilePic.jsx";
 
 function App() {
   const fruits = [{id: 1, name: "apple", calories: 95}, 
@@ -32,10 +33,10 @@ function App() {
     <Header/>
     <Card/>
     <Card/>
-    <Food/>
+    <ProfilePic/>
+    <Button/>
     <Student name="John" age={25} isStudent={true}/>
     <Student name="Bob" age={14} isStudent={false}/>
-    <Button/>
     {fruits.length > 0 && <List items = {fruits} category = "Fruits"/>}
     {vegetables.length > 0 && <List items = {vegetables} category = "Vegetables"/>}
     {/* <UserGreeting isLoggedIn={true} username="John"/> */}
