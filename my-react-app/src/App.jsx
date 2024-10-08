@@ -1,6 +1,6 @@
 // lib/utils.ts
-import clsx from "clsx";
-import { twMerge } from "tailwind-merge";
+// import clsx from "clsx";
+// import { twMerge } from "tailwind-merge";
  
 export function cn(...inputs) {
   return twMerge(clsx(inputs));
@@ -17,6 +17,7 @@ import List from "./List.jsx"
 import ProfilePic from "./ProfilePic.jsx";
 import MyComponent from "./MyComponent.jsx";
 import Counter from "./Counter.jsx";
+import ColourPicker from "./ColourPicker.jsx";
 
 function App() {
   const fruits = [{id: 1, name: "apple", calories: 95}, 
@@ -48,6 +49,8 @@ function App() {
     {fruits.length > 0 && <List items = {fruits} category = "Fruits"/>}
     {vegetables.length > 0 && <List items = {vegetables} category = "Vegetables"/>}
     {/* <UserGreeting isLoggedIn={true} username="John"/> */}
+    <hr></hr>
+    <ColourPicker/>
     <Footer></Footer>
     </>
   );
